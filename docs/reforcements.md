@@ -10,7 +10,7 @@
 ### 钢筋面积表
 <!--rehype:wrap-class=col-span-3-->
 
-| 直径 d (mm) | 单根公称质量 (kg/m) | 1根 (mm²) | 2根 (mm²) | 3根 (mm²) | 4根 (mm²) | 5根 (mm²) | 6根 (mm²) | 7根 (mm²) | 8根 (mm²) | 9根 (mm²) |
+| 直径 d (mm) | 单根质量<br/>(kg/m) | 1根 (mm²) | 2根 (mm²) | 3根 (mm²) | 4根 (mm²) | 5根 (mm²) | 6根 (mm²) | 7根 (mm²) | 8根 (mm²) | 9根 (mm²) |
 |-------------|----------------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | 6           | 0.222                | 28        | 57        | 85        | 113       | 141       | 170       | 198       | 226       | 255       |
 | 8           | 0.395                | 50        | 101       | 151       | 201       | 251       | 302       | 352       | 402       | 452       |
@@ -26,17 +26,14 @@
 | 32          | 6.313                | 804       | 1608      | 2413      | 3217      | 4021      | 4825      | 5630      | 6434      | 7238      |
 | 36          | 7.990                | 1018      | 2036      | 3054      | 4072      | 5090      | 6108      | 7125      | 8143      | 9161      |
 | 40          | 9.865                | 1257      | 2513      | 3770      | 5027      | 6283      | 7540      | 8796      | 10053     | 11310     |
-<!--rehype:className=show-header-->
+<!--rehype:className=show-header left-align-->
 
 梁配筋表
 ---
 
 ### 梁纵向钢筋单排最大根数（净保护层厚度：30mm）
 <!--rehype:wrap-class=col-span-2-->
-
-**注**：表内分数，其分子为梁上部纵筋单排最大根数，分母为梁下部钢筋单排最大根数。
-
-| 梁宽 b (mm) \ 纵筋直径 (mm) | 14 | 16 | 18 | 20 | 22 | 25 | 28 | 32 | 36 | 40 |
+| 纵筋直径 (mm)/<br/>梁宽 b (mm)| 14 | 16 | 18 | 20 | 22 | 25 | 28 | 32 | 36 | 40 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **150** | 2 | 2 | 2 | 2 | 2 | 2 | 1/2 | 1 | 1 | 1 |
 | **200** | 3/4 | 3/4 | 3 | 3 | 3 | 2/3 | 2/3 | 2 | 2 | 1/2 |
@@ -48,10 +45,100 @@
 | **500** | 10/11 | 10/11 | 9/10 | 9/10 | 8/9 | 7/9 | 6/8 | 6/7 | 5/6 | 4/5 |
 | **550** | 11/13 | 11/12 | 10/11 | 10/11 | 9/10 | 8/10 | 7/9 | 6/8 | 5/7 | 5/6 |
 | **600** | 12/14 | 12/13 | 11/13 | 11/12 | 10/12 | 9/11 | 8/10 | 7/8 | 6/7 | 5/7 |
+<!--rehype:className=show-header left-align-->
 
-<!--rehype:className=show-header-->
-
-**常见说明（基于同类表格通用注记）**：
+### << 左表说明
+<!--rehype:wrap-class=col-span-1-->
+**注**：
+- 表内分数，其分子为梁上部纵筋单排最大根数，分母为梁下部钢筋单排最大根数。
 - 计算依据：梁侧保护层 30mm + 箍筋直径（通常考虑10mm或12mm箍筋） + 纵筋间最小净距（上部 ≥1.5d 或30mm，下部 ≥d 或25mm 等规范要求）。
 - 上部钢筋根数通常少于下部（受压区配筋少）。
 - 实际工程中需结合具体规范（如 GB 50010、图集 16G101 等）及梁高、环境类别验证。
+
+柱配筋表
+---
+
+### 柱纵向钢筋单排最大根数(净保护层厚度: 30mm)
+<!--rehype:wrap-class=col-span-2-->
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">柱宽b (mm)</th>
+      <th colspan="10">钢筋直径 (mm)</th>
+    </tr>
+    <tr>
+      <th>14</th><th>16</th><th>18</th><th>20</th><th>22</th>
+      <th>25</th><th>28</th><th>32</th><th>36</th><th>40</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>250</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td></tr>
+    <tr><td>300</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td></tr>
+    <tr><td>350</td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td></tr>
+    <tr><td>400</td><td>6</td><td>6</td><td>6</td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td></tr>
+    <tr><td>450</td><td>6</td><td>7</td><td>7</td><td>6</td><td>6</td><td>6</td><td>5</td><td>5</td><td>4</td><td>4</td></tr>
+    <tr><td>500</td><td>7</td><td>7</td><td>7</td><td>7</td><td>6</td><td>6</td><td>6</td><td>5</td><td>5</td><td>5</td></tr>
+    <tr><td>550</td><td>8</td><td>8</td><td>8</td><td>7</td><td>7</td><td>7</td><td>6</td><td>6</td><td>5</td><td>5</td></tr>
+    <tr><td>600</td><td>9</td><td>8</td><td>8</td><td>8</td><td>8</td><td>7</td><td>7</td><td>7</td><td>6</td><td>6</td></tr>
+    <tr><td>650</td><td>10</td><td>9</td><td>9</td><td>9</td><td>9</td><td>8</td><td>8</td><td>7</td><td>7</td><td>7</td></tr>
+    <tr><td>700</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>9</td><td>9</td><td>8</td><td>8</td><td>8</td></tr>
+    <tr><td>750</td><td>11</td><td>11</td><td>11</td><td>10</td><td>10</td><td>10</td><td>9</td><td>9</td><td>8</td><td>8</td></tr>
+    <tr><td>800</td><td>12</td><td>11</td><td>11</td><td>11</td><td>11</td><td>10</td><td>10</td><td>9</td><td>9</td><td>9</td></tr>
+    <tr><td>850</td><td>13</td><td>12</td><td>12</td><td>12</td><td>11</td><td>11</td><td>10</td><td>10</td><td>9</td><td>9</td></tr>
+    <tr><td>900</td><td>13</td><td>13</td><td>13</td><td>13</td><td>12</td><td>12</td><td>12</td><td>11</td><td>10</td><td>10</td></tr>
+    <tr><td>950</td><td>14</td><td>14</td><td>14</td><td>14</td><td>13</td><td>13</td><td>12</td><td>12</td><td>11</td><td>10</td></tr>
+    <tr><td>1000</td><td>15</td><td>15</td><td>14</td><td>14</td><td>14</td><td>13</td><td>13</td><td>12</td><td>11</td><td>10</td></tr>
+  </tbody>
+</table>
+<!--rehype:className=show-header left-align-->
+
+板配筋
+---
+
+### 每米板宽内的钢筋截面面积表
+<!--rehype:wrap-class=col-span-2-->
+<table>
+    <thead>
+        <tr class="header-main">
+            <th rowspan="2">钢筋间距<br>(mm)</th>
+            <th colspan="13">当钢筋直径（mm）为下列数值时的钢筋截面面积（mm²）</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>4.5</th>
+            <th>5</th>
+            <th>6</th>
+            <th>8</th>
+            <th>10</th>
+            <th>12</th>
+            <th>14</th>
+            <th>16</th>
+            <th>18</th>
+            <th>20</th>
+            <th>22</th>
+            <th>25</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>70</td><td>180</td><td>227</td><td>280</td><td>404</td><td>718</td><td>1122</td><td>1616</td><td>2199</td><td>2872</td><td>3635</td><td>4488</td><td>5430</td><td>7012</td></tr>
+        <tr><td>75</td><td>168</td><td>212</td><td>262</td><td>377</td><td>670</td><td>1047</td><td>1508</td><td>2053</td><td>2681</td><td>3393</td><td>4189</td><td>5068</td><td>6545</td></tr>
+        <tr><td>80</td><td>157</td><td>199</td><td>245</td><td>353</td><td>628</td><td>982</td><td>1414</td><td>1924</td><td>2513</td><td>3181</td><td>3927</td><td>4752</td><td>6136</td></tr>
+        <tr><td>90</td><td>140</td><td>177</td><td>218</td><td>314</td><td>559</td><td>873</td><td>1257</td><td>1710</td><td>2234</td><td>2827</td><td>3491</td><td>4224</td><td>5454</td></tr>
+        <tr><td>100</td><td>126</td><td>159</td><td>196</td><td>283</td><td>503</td><td>785</td><td>1131</td><td>1539</td><td>2011</td><td>2545</td><td>3142</td><td>3801</td><td>4909</td></tr>
+        <tr><td>110</td><td>114</td><td>145</td><td>178</td><td>257</td><td>457</td><td>714</td><td>1028</td><td>1399</td><td>1828</td><td>2313</td><td>2856</td><td>3456</td><td>4462</td></tr>
+        <tr><td>120</td><td>105</td><td>133</td><td>164</td><td>236</td><td>419</td><td>654</td><td>942</td><td>1283</td><td>1676</td><td>2121</td><td>2618</td><td>3168</td><td>4091</td></tr>
+        <tr><td>125</td><td>101</td><td>127</td><td>157</td><td>226</td><td>402</td><td>628</td><td>905</td><td>1232</td><td>1608</td><td>2036</td><td>2513</td><td>3041</td><td>3927</td></tr>
+        <tr><td>130</td><td>97</td><td>122</td><td>151</td><td>217</td><td>387</td><td>604</td><td>870</td><td>1184</td><td>1547</td><td>1957</td><td>2417</td><td>2924</td><td>3776</td></tr>
+        <tr><td>140</td><td>90</td><td>114</td><td>140</td><td>202</td><td>359</td><td>561</td><td>808</td><td>1100</td><td>1436</td><td>1818</td><td>2244</td><td>2715</td><td>3506</td></tr>
+        <tr><td>150</td><td>84</td><td>106</td><td>131</td><td>188</td><td>335</td><td>524</td><td>754</td><td>1026</td><td>1340</td><td>1696</td><td>2094</td><td>2534</td><td>3272</td></tr>
+        <tr><td>160</td><td>79</td><td>99</td><td>123</td><td>177</td><td>314</td><td>491</td><td>707</td><td>962</td><td>1257</td><td>1590</td><td>1963</td><td>2376</td><td>3068</td></tr>
+        <tr><td>170</td><td>74</td><td>94</td><td>115</td><td>166</td><td>296</td><td>462</td><td>665</td><td>906</td><td>1183</td><td>1497</td><td>1848</td><td>2236</td><td>2887</td></tr>
+        <tr><td>175</td><td>72</td><td>91</td><td>112</td><td>162</td><td>287</td><td>449</td><td>646</td><td>880</td><td>1149</td><td>1454</td><td>1795</td><td>2172</td><td>2805</td></tr>
+        <tr><td>180</td><td>70</td><td>88</td><td>109</td><td>157</td><td>279</td><td>436</td><td>628</td><td>855</td><td>1117</td><td>1414</td><td>1745</td><td>2112</td><td>2727</td></tr>
+        <tr><td>190</td><td>66</td><td>84</td><td>103</td><td>149</td><td>265</td><td>413</td><td>595</td><td>810</td><td>1058</td><td>1339</td><td>1653</td><td>2001</td><td>2584</td></tr>
+        <tr><td>200</td><td>63</td><td>80</td><td>98</td><td>141</td><td>251</td><td>392</td><td>565</td><td>770</td><td>1005</td><td>1272</td><td>1571</td><td>1901</td><td>2454</td></tr>
+        <tr><td>250</td><td>50</td><td>64</td><td>79</td><td>113</td><td>201</td><td>314</td><td>452</td><td>616</td><td>804</td><td>1018</td><td>1257</td><td>1521</td><td>1963</td></tr>
+        <tr><td>300</td><td>42</td><td>53</td><td>65</td><td>94</td><td>168</td><td>262</td><td>377</td><td>513</td><td>670</td><td>848</td><td>1047</td><td>1267</td><td>1636</td></tr>
+    </tbody>
+</table>
+<!--rehype:className=show-header left-align-->
