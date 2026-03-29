@@ -11,8 +11,8 @@ Structural Reference
 坑已挖，需要您的参与完善和[贡献](./docs/quickreference.md)！🙏
 <!--rehype:style=padding-bottom: 23px;-->
 
-[配筋速查](./docs/reforcements.md)<!--rehype:style=background:rgb(0 193 9);&class=contributing-->
-
+[配筋速查](./docs/reforcements.md)<!--rehype:style=background:rgb(1, 86, 5);&class=contributing-->
+[预应力筋速查](./docs/tendons.md)<!--rehype:style=background:rgb(43, 11, 81);&class=contributing-->
 <!--rehype:class=home-card-->
 
 ## 装配式混凝土结构
